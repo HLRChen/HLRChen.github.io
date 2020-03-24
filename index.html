@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  lang="en">
+<html  lang="zh">
 <head>
     <meta charset="utf-8" />
 
@@ -14,7 +14,7 @@
 <meta property="og:title" content="HLRChen">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
 <meta property="og:site_name" content="HLRChen">
-<meta property="og:locale" content="en">
+<meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;og_image.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;og_image.png">
@@ -112,7 +112,7 @@
                 
                 
                 
-                <a class="navbar-item search" title="Search" href="javascript:;">
+                <a class="navbar-item search" title="搜索" href="javascript:;">
                     <i class="fas fa-search"></i>
                 </a>
                 
@@ -132,17 +132,141 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-10-08T13:01:32.000Z">2019-10-08</time>
+                <time class="level-item has-text-grey" datetime="2019-10-31T13:57:39.000Z">2019-10-31</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    几秒 读完 (大约 0 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/10/31/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+            
+        </h1>
+        <div class="content">
+            
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-10-24T11:27:24.000Z">2019-10-24</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E7%94%9F%E6%B4%BB%E4%B8%8E%E6%80%BB%E7%BB%93/">生活与总结</a>
+                <a class="has-link-grey -link" href="/categories/programming-knowledge/">编程知识点</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    5 minutes read (About 687 words)
+                    7 分钟 读完 (大约 1072 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/10/24/C%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E6%8C%87%E9%92%88/">C语言中的指针</a>
+            
+        </h1>
+        <div class="content">
+            <h2 id="C语言中的-指针-既是难点又是重点，最近在学习数据结构过程中，又重新遇见这个拦路虎，因此在这里做些总结："><a href="#C语言中的-指针-既是难点又是重点，最近在学习数据结构过程中，又重新遇见这个拦路虎，因此在这里做些总结：" class="headerlink" title="C语言中的   指针 既是难点又是重点，最近在学习数据结构过程中，又重新遇见这个拦路虎，因此在这里做些总结："></a>C语言中的   <u>指针</u> 既是难点又是重点，最近在学习数据结构过程中，又重新遇见这个拦路虎，因此在这里做些总结：</h2><h3 id="一、弄清楚几个符号："><a href="#一、弄清楚几个符号：" class="headerlink" title="一、弄清楚几个符号："></a>一、弄清楚几个符号：</h3><figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">int</span> b=<span class="hljs-number">22</span>;  <span class="hljs-comment">//定义整型变量并初始化</span></span><br><span class="line"><span class="hljs-keyword">int</span> *p; <span class="hljs-comment">//定义指向整型数据的指针变量p</span></span><br><span class="line">p=&amp;b; <span class="hljs-comment">// 把变量b的地址赋给p p得到b的地址指向了p  </span></span><br><span class="line"><span class="hljs-comment">//或者 int *p=&amp;b; 定义指针变量的同时初始化</span></span><br><span class="line"><span class="hljs-built_in">printf</span>(<span class="hljs-string">"the p is point to %p , p's addr is %X, *p is %d"</span>, p, &amp;p, *p);</span><br></pre></td></tr></table></figure>
+
+<p>几个符号：</p>
+<ul>
+<li>&amp; 取地址运算符 &amp;b是变量a的地址</li>
+<li>指针运算符* 代表指针变量p指向的对象 在这里*p=22;</li>
+</ul>
+<p>假设存储变量b的存储单元地址是003DFC98，存储指针变量p存储单元地址是3DFC8C</p>
+<p>输出语句中p,&amp;p,*p所代表的值：</p>
+<ul>
+<li>p :存储变量b的存储单元地址，即p指向b，即003DFC98</li>
+<li>&amp;p:存储指针变量p存储单元的地址，即3DFC8C</li>
+<li>*p:指针变量p指向的对象，即变量值22</li>
+</ul>
+<hr>
+<h3 id="二、指针引用数组和字符串"><a href="#二、指针引用数组和字符串" class="headerlink" title="二、指针引用数组和字符串"></a>二、指针引用数组和字符串</h3><h4 id="1-数组"><a href="#1-数组" class="headerlink" title="1.数组"></a>1.数组</h4><h4 id="2-字符串"><a href="#2-字符串" class="headerlink" title="2.字符串"></a>2.字符串</h4><hr>
+<h3 id="三、几个指针"><a href="#三、几个指针" class="headerlink" title="三、几个指针"></a>三、几个指针</h3><h4 id="1-指向函数的指针"><a href="#1-指向函数的指针" class="headerlink" title="1.指向函数的指针"></a>1.指向函数的指针</h4><h4 id="2-指针数组"><a href="#2-指针数组" class="headerlink" title="2.指针数组"></a>2.指针数组</h4><h4 id="3-多重指针（主要是二重指针）"><a href="#3-多重指针（主要是二重指针）" class="headerlink" title="3.多重指针（主要是二重指针）"></a>3.多重指针（主要是二重指针）</h4><hr>
+<h3 id="四、指针作为函数参数"><a href="#四、指针作为函数参数" class="headerlink" title="四、指针作为函数参数"></a>四、指针作为函数参数</h3><h4 id="1-一重指针作为参数"><a href="#1-一重指针作为参数" class="headerlink" title="1.一重指针作为参数"></a>1.一重指针作为参数</h4><p>首先看如下代码：</p>
+<figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Test1</span><span class="hljs-params">(<span class="hljs-keyword">int</span> *p)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;   <span class="hljs-keyword">int</span> a=<span class="hljs-number">11</span>,c=<span class="hljs-number">13</span>;</span><br><span class="line">    *p=a;</span><br><span class="line">    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"调用Test1函数输出的情况: \n"</span>);</span><br><span class="line">    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"\nthe p is point to %p , p's addr is %X, *p is %d"</span>, p, &amp;p, *p);</span><br><span class="line">    p=&amp;c;</span><br><span class="line">    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"\nthe p is point to %p , p's addr is %X, *p is %d"</span>, p, &amp;p, *p);</span><br><span class="line">    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"调用函数过程结束：\n"</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">   <span class="hljs-keyword">int</span> b=<span class="hljs-number">12</span>;</span><br><span class="line">   <span class="hljs-keyword">int</span> *p=&amp;b;</span><br><span class="line">   Test1(p);</span><br><span class="line">   <span class="hljs-built_in">printf</span>(<span class="hljs-string">"调用完函数输出的情况: \n"</span>);</span><br><span class="line">   <span class="hljs-built_in">printf</span>(<span class="hljs-string">"the p is point to %p , p's addr is %X, *p is %d"</span>, p, &amp;p, *p);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">运行结果如下：</span><br><span class="line">调用Test1函数输出的情况:</span><br><span class="line">the p is point to <span class="hljs-number">0019F</span>F2C , p's addr is <span class="hljs-number">19F</span>ED8, *p is <span class="hljs-number">11</span></span><br><span class="line">the p is point to <span class="hljs-number">0019F</span>EC8 , p's addr is <span class="hljs-number">19F</span>ED8, *p is <span class="hljs-number">13</span></span><br><span class="line">调用函数过程结束</span><br><span class="line"></span><br><span class="line">调用完函数输出的情况:</span><br><span class="line">the p is point to <span class="hljs-number">0019F</span>F2C , p's addr is <span class="hljs-number">19F</span>F28, *p is <span class="hljs-number">11</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>运行结果的分析：</p>
+<p>1.Test1()函数中的结果分析：</p>
+</li>
+</ul>
+<p>形参p分配了临时单元，形参p接受到了来自实参b的地址，p因此指向b;</p>
+<p>*p=a 将a的值赋给了指针变量p指向的内容值，也即b的存储单元中的内容值，此时b中的值为11；</p>
+<p>p=&amp;c 将c的地址值赋给了指针变量p,此时p指向c的内存单元。</p>
+<ul>
+<li>Test1函数第一个输出：p得到的是b的地址，因此指向b的内存单元，即输出b的地址是0019FF2C；形参p分配了临时单元，输出单元地址是19FED8；执行了*p=a语句，因此p指向的内存单元内容值更改赋值为11。</li>
+<li>Test1函数第二个输出：执行了p=&amp;c语句，因此p得到c的地址，于是指向c的内存单元，即输出c的地址是0019FEC8；但形参分配的临时单元未变，还是输出单元地址19FED8；*p的值因此为c的值是13。</li>
+</ul>
+<p>2.main()函数中的结果分析:</p>
+<p>调用完Test1()函数之后，形参p被释放，调用函数时，只进行所谓的“值传递”，因此实参p依旧存在，p依旧保存地址b的值,输出0019FF2C；且存储指针变量p内存单元地址未变，输出 19FF28；调用了函数，调用函数中执行了*p=a，于是将b的内容值改变了，输出11。</p>
+<ul>
+<li>总结：</li>
+</ul>
+<p>一重指针作为参数，将实参的值传递给形参，此处只是所谓的“值传递”，实参指针变量p地址与形参指针变量p的地址不同，调用函数只能对指针变量p所指的内存单元内容值进行修改，并不能改变对实参指针变量p中的地址值进行修改。</p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-10-08T13:01:32.000Z">2019-10-08</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/life-and-summary/">生活与总结</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 分钟 读完 (大约 687 个字)
                 </span>
                 
                 
@@ -250,30 +374,30 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Post
+                        文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        1
+                        3
                     </p>
                 </div>
             </div>
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Category
+                        分类
                     </p>
                     <p class="title has-text-weight-normal">
-                        1
+                        2
                     </p>
                 </div>
             </div>
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Tag
+                        标签
                     </p>
                     <p class="title has-text-weight-normal">
-                        1
+                        2
                     </p>
                 </div>
             </div>
@@ -281,7 +405,7 @@
         
         <div class="level">
             <a class="level-item button is-link is-rounded" href="https://github.com/HLRChen" target="_blank">
-                Follow</a>
+                关注我</a>
         </div>
         
         
@@ -334,7 +458,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Links
+            链接
         </h3>
         <ul class="menu-list">
         
@@ -358,9 +482,9 @@
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Tag Cloud
+            标签云
         </h3>
-        <a href="/tags/life/" style="font-size: 10px;">life</a>
+        <a href="/tags/life/" style="font-size: 10px;">life</a> <a href="/tags/%E6%8C%87%E9%92%88/" style="font-size: 10px;">指针</a>
     </div>
 </div>
     
@@ -372,13 +496,21 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Categories
+                分类
             </h3>
             <ul class="menu-list">
             <li>
-        <a class="level is-marginless" href="/categories/%E7%94%9F%E6%B4%BB%E4%B8%8E%E6%80%BB%E7%BB%93/">
+        <a class="level is-marginless" href="/categories/life-and-summary/">
             <span class="level-start">
                 <span class="level-item">生活与总结</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/programming-knowledge/">
+            <span class="level-start">
+                <span class="level-item">编程知识点</span>
             </span>
             <span class="level-end">
                 <span class="level-item tag">1</span>
@@ -392,8 +524,46 @@
             <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recent
+            最新文章
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/10/31/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="多线程">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-31T13:57:39.000Z">2019-10-31</time></div>
+                    <a href="/2019/10/31/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" class="title has-link-black-ter is-size-6 has-text-weight-normal">多线程</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/10/24/C%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E6%8C%87%E9%92%88/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="C语言中的指针">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T11:27:24.000Z">2019-10-24</time></div>
+                    <a href="/2019/10/24/C%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E6%8C%87%E9%92%88/" class="title has-link-black-ter is-size-6 has-text-weight-normal">C语言中的指针</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/programming-knowledge/">编程知识点</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -408,7 +578,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-08T13:01:32.000Z">2019-10-08</time></div>
                     <a href="/2019/10/08/%E5%90%AF%E7%A8%8B/" class="title has-link-black-ter is-size-6 has-text-weight-normal">启程</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/%E7%94%9F%E6%B4%BB%E4%B8%8E%E6%80%BB%E7%BB%93/">生活与总结</a>
+                        <a class="has-link-grey -link" href="/categories/life-and-summary/">生活与总结</a>
                     </p>
                 </div>
             </div>
@@ -421,17 +591,17 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archives
+            归档
         </h3>
         <ul class="menu-list">
         
         <li>
             <a class="level is-marginless" href="/archives/2019/10/">
                 <span class="level-start">
-                    <span class="level-item">October 2019</span>
+                    <span class="level-item">十月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">1</span>
+                    <span class="level-item tag">3</span>
                 </span>
             </a>
         </li>
@@ -445,13 +615,20 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Tags
+                标签
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/life/">
                         <span class="tag">life</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E6%8C%87%E9%92%88/">
+                        <span class="tag">指针</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -477,13 +654,21 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Categories
+                分类
             </h3>
             <ul class="menu-list">
             <li>
-        <a class="level is-marginless" href="/categories/%E7%94%9F%E6%B4%BB%E4%B8%8E%E6%80%BB%E7%BB%93/">
+        <a class="level is-marginless" href="/categories/life-and-summary/">
             <span class="level-start">
                 <span class="level-item">生活与总结</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/programming-knowledge/">
+            <span class="level-start">
+                <span class="level-item">编程知识点</span>
             </span>
             <span class="level-end">
                 <span class="level-item tag">1</span>
@@ -497,8 +682,46 @@
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recent
+            最新文章
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/10/31/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="多线程">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-31T13:57:39.000Z">2019-10-31</time></div>
+                    <a href="/2019/10/31/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" class="title has-link-black-ter is-size-6 has-text-weight-normal">多线程</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/10/24/C%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E6%8C%87%E9%92%88/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="C语言中的指针">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-24T11:27:24.000Z">2019-10-24</time></div>
+                    <a href="/2019/10/24/C%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E6%8C%87%E9%92%88/" class="title has-link-black-ter is-size-6 has-text-weight-normal">C语言中的指针</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/programming-knowledge/">编程知识点</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -513,7 +736,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-08T13:01:32.000Z">2019-10-08</time></div>
                     <a href="/2019/10/08/%E5%90%AF%E7%A8%8B/" class="title has-link-black-ter is-size-6 has-text-weight-normal">启程</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/%E7%94%9F%E6%B4%BB%E4%B8%8E%E6%80%BB%E7%BB%93/">生活与总结</a>
+                        <a class="has-link-grey -link" href="/categories/life-and-summary/">生活与总结</a>
                     </p>
                 </div>
             </div>
@@ -526,17 +749,17 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archives
+            归档
         </h3>
         <ul class="menu-list">
         
         <li>
             <a class="level is-marginless" href="/archives/2019/10/">
                 <span class="level-start">
-                    <span class="level-item">October 2019</span>
+                    <span class="level-item">十月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">1</span>
+                    <span class="level-item tag">3</span>
                 </span>
             </a>
         </li>
@@ -550,13 +773,20 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Tags
+                标签
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/life/">
                         <span class="tag">life</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E6%8C%87%E9%92%88/">
+                        <span class="tag">指针</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -624,7 +854,7 @@
 </footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
-<script>moment.locale("en");</script>
+<script>moment.locale("zh-CN");</script>
 
 <script>
 var IcarusThemeSettings = {
@@ -696,7 +926,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
     
     
-<a id="back-to-top" title="Back to Top" href="javascript:;">
+<a id="back-to-top" title="回到顶端" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>
@@ -720,7 +950,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="searchbox ins-search">
     <div class="searchbox-container ins-search-container">
         <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something..." />
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么..." />
             <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="searchbox-result-wrapper ins-section-wrapper">
@@ -732,11 +962,11 @@ document.addEventListener('DOMContentLoaded', function () {
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: 'Posts',
-                PAGES: 'Pages',
-                CATEGORIES: 'Categories',
-                TAGS: 'Tags',
-                UNTITLED: '(Untitled)',
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
             },
             CONTENT_URL: '/content.json',
         };
